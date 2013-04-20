@@ -1,0 +1,97 @@
+<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Watts: 1500 -->
+<!-- Old Watts: 261 -->
+<!-- Watt Percentage: 18.75% -->
+<!-- Old Watts Percentage: 3.2625% -->
+<!-- Gauge x: 39.2708125 -->
+<!-- Old Gauge x: 27.587197375 -->
+<!-- Gauge Needle Rotate: -8.125 -->
+<!-- Old Gauge Needle Rotate: -12.15175 -->
+
+
+<svg width="128" height="146" version="1.1"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<g id="background_1_">
+	<rect id="webpage_x5F_color_x5F_bg" fill="#D4D4D4" width="128" height="146"/>
+	<g id="frame">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="241.959" y1="-122.75" x2="241.959" y2="-249.2505" gradientTransform="matrix(1 0 0 -1 -178 -121)">
+			<stop  offset="0" style="stop-color:#C1C1C0"/>
+			<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+			<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+			<stop  offset="0.8039" style="stop-color:#888888"/>
+			<stop  offset="1" style="stop-color:#808080"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" stroke="#808080" stroke-width="3" stroke-miterlimit="10" d="M125.155,128.25H2.762V7.812
+			c0-3.334,2.708-6.062,6.02-6.062h110.355c3.31,0,6.02,2.728,6.02,6.062L125.155,128.25L125.155,128.25z"/>
+	</g>
+
+	<g id="Power_Dial_1_">
+		<path id="blue_2_" fill="none" stroke="#0055FF" stroke-width="4" stroke-miterlimit="10" d="M9.375,70
+			c16.375-3.875,38.083-7.333,55.458-7.333"/>
+		<path id="green" fill="none" stroke="#43FF00" stroke-width="4" stroke-miterlimit="10" d="M64.833,62.667
+			c7.871,0,17.858,0.479,25.542,1.208"/>
+		<path id="red" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" d="M90.375,63.875
+			c9.271,0.881,17.312,2.359,26.25,4.25"/>
+		
+			<line id="line_x5F_0" fill="none" stroke="#0055FF" stroke-width="4" stroke-miterlimit="10" x1="11.163" y1="69.04" x2="8.487" y2="56.013"/>
+		
+			<line id="line_x5F_1" fill="none" stroke="#0055FF" stroke-width="3" stroke-miterlimit="10" x1="24.149" y1="65.782" x2="22.49" y2="56.925"/>
+		
+			<line id="line_x5F_2" fill="none" stroke="#0055FF" stroke-width="4" stroke-miterlimit="10" x1="36.965" y1="64.158" x2="35.5" y2="51"/>
+		
+			<line id="line_x5F_3" fill="none" stroke="#0055FF" stroke-width="3" stroke-miterlimit="10" x1="49.965" y1="63.416" x2="49.458" y2="54.583"/>
+		
+			<line id="line_x5F_4" fill="none" stroke="#0055FF" stroke-width="4" stroke-miterlimit="10" x1="62.794" y1="62.977" x2="62.794" y2="49.678"/>
+		
+			<line id="line_x5F_5" fill="none" stroke="#43FF00" stroke-width="4" stroke-miterlimit="10" x1="75.825" y1="62.732" x2="76.333" y2="53.75"/>
+		
+			<line id="line_x5F_6" fill="none" stroke="#43FF00" stroke-width="4" stroke-miterlimit="10" x1="88.5" y1="63.583" x2="90" y2="50.333"/>
+		
+			<line id="line_x5F_7" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="101.689" y1="65.262" x2="103.125" y2="56.344"/>
+		
+			<line id="line_x5F_8" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x1="114.646" y1="67.558" x2="117.416" y2="54.521"/>
+	</g>
+	
+		<text id="label_x5F_text" transform="matrix(1 0 0 1 25 94.5986)" fill="#2B2B2B" font-family="'Verdana'"  font-size="18">KiloWatts</text>
+
+	<g id="needle_x5F_group">
+		<g transform="rotate(-8.125 65.45 124.209)">
+			<animateTransform attributeName="transform" id="animate_rotation" type="rotate" from="-12.15175  65.45 124.209" to="-8.125  65.45 124.209" dur="8s"/>
+			
+			<line id="needle_1_" fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="39.2708125" x2="39.2708125" y1="50.267" y2="134.75">
+			
+			<animate id="animate_translate_x1" attributeName="x1" from="27.587197375" to="39.2708125" dur="8s"/>
+			<animate id="animate_translate_x2" attributeName="x2" from="27.587197375" to="39.2708125" dur="8s"/>
+			</line>
+		</g>
+	</g>
+	
+	<g id="name_x5F_plack_1_">
+		<path fill="#808080" d="M1.167,125.25H126.75v13.875c0,3.3-2.649,6-5.887,6H7.054c-3.237,0-5.887-2.7-5.887-6V125.25z"/>
+	</g>
+
+</g>
+
+<g id="watts_Dial">
+</g>
+
+<g id="Watts_1_">
+	<text transform="matrix(1 0 0 1 9 52.1221)" font-family="'Verdana'" font-size="8" text-anchor="middle">0</text>
+	<text id="_x31_0_1_" transform="matrix(1 0 0 1 62 47.5918)" font-family="'Verdana'" font-size="8" text-anchor="middle">4</text>
+	<text transform="matrix(1 0 0 1 118 50.8311)" font-family="'Verdana'" font-size="8" text-anchor="middle">8</text>
+	
+	<text transform="matrix(1 0 0 1 64 141.25)" font-family="Verdana" font-size="12" text-anchor="middle">Solar PV Power</text>
+</g>
+
+<g id="Status">
+	<g id="status_x5F_text_x5F_bg">
+		<path fill="#A6A6A6" d="M80,8.625c0-1.65,1.35-3,3-3h34c1.65,0,3,1.35,3,3V22.5c0,1.65-1.35,3-3,3H83c-1.65,0-3-1.35-3-3V8.625z"
+			/>
+	</g>
+<text id="status_x5F_text" transform="matrix(1 0 0 1 100 20.3125)" font-family="'Verdana'"  font-size="10" text-anchor="middle">1.5 KW</text>
+</g>
+ 
+</svg>

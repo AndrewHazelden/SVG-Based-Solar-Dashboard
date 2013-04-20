@@ -19,14 +19,13 @@ The original sensor data is pushed to Pachube using an Arduino microcontroller. 
 
 The source code is free for non-commercial use. Attribution is required.
 
-This script was made to support the Villa Azul Solar PV and Hot water systems. You can view the live SVG based Solar Dashboard here: 
+This script was made to support the Villa Azul Solar PV and Hot water systems. You can view the live SVG based Solar Dashboard here:  
 [http://www.true.mistral.co.uk/dash/](http://www.true.mistral.co.uk/dash/)
 
 For more information on this project check out my blog post:  
- [Monitoring A Solar Hot Water System Over the Internet](http://www.andrewhazelden.com/blog/2011/07/monitoring-a-solar-hot-water-system-over-the-internet/).
+[Monitoring A Solar Hot Water System Over the Internet](http://www.andrewhazelden.com/blog/2011/07/monitoring-a-solar-hot-water-system-over-the-internet/).
 
 I wrote a blog post about the process of using a linksys router as a network serial port:  
-
 [How to use the serial ports on a Linksys WRT54GS with DD-WRT v24](http://www.andrewhazelden.com/blog/2010/01/how-to-use-the-serial-ports-on-a-linksys-wrt54gs-with-dd-wrt-v24/).
 
 

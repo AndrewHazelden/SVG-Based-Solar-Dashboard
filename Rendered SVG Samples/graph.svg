@@ -1,0 +1,335 @@
+<?xml version="1.0" standalone="no"?>
+<!-- 
+num_of_pachube_intervals: 10
+graph_timescale: 86400
+desired_number_of_graph_points: 96
+desired_interval: 900 seconds
+2x desired_interval: 450 seconds
+selected_pachube_interval_index: 3
+selected_pachube_interval: 300 seconds
+
+
+We are within the pachube the query limit for the interval value.
+We requested a timescale of: 86400 and the limit is: 432000
+
+
+interval_scaling_factor: 3
+expected_data_records: 288
+-->
+<!-- 
+Gauge Type: temperature
+Gauge Name: Jacuzzi Pump
+Combined Gauge Name: 24 Hour Jacuzzi Pump
+Gauge high: 60
+Gauge min: 20
+
+Stored Cookie -> Duration: 
+--> 
+<!-- Loading data stream: 
+
+Loaded: 289 of 288 expected data samples.
+-->
+<!-- Duration value: 24hours -->
+<!-- x-axis scale value: 0.77003484320557 -->
+<!-- read in 289 lines of data. -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg width="256" height="146" version="1.2" baseProfile="tiny"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" onload="init()">
+
+
+<script xlink:href="date.js" type="text/javascript" />
+<script xlink:href="timeOffset.js" type="text/javascript" />
+<script xlink:href="valueRange.js" type="text/javascript" />
+
+<script type="text/javascript">
+<![CDATA[	
+var text, textnode
+
+function init()
+{
+	
+	var printLine = "";
+	var timePeriod =  "hours";
+	var label_interval =  24;
+ 
+	
+	
+	
+	
+	//array of label element id's
+	var labelArray=new Array(4);
+	labelArray[0]="label1";
+	labelArray[1]="label2";
+	labelArray[2]="label3";
+	labelArray[3]="label4";
+	
+	
+	if (timePeriod == "months"){
+	//scan through text element id's
+		var j=0;
+		for (j=0;j<=3;j++){
+		current_element_id = labelArray[j];
+		textnode = document.getElementById(current_element_id);
+		printLine =  monthOffset(label_interval, j);
+		textnode.textContent = printLine + "\n"
+		} //end for loop
+	}
+	else if (timePeriod == "days"){
+	//scan through text element id's
+		var j=0;
+		for (j=0;j<=3;j++){
+		current_element_id = labelArray[j];
+		textnode = document.getElementById(current_element_id);
+		printLine =  dayOffset(label_interval, j);
+		textnode.textContent = printLine + "\n"
+		} //end for loop
+	}
+	else if (timePeriod == "mins"){
+	//scan through text element id's
+		var j=0;
+		for (j=0;j<=3;j++){
+		current_element_id = labelArray[j];
+		textnode = document.getElementById(current_element_id);
+		printLine =  minOffset(label_interval, j);
+		textnode.textContent = printLine + "\n"
+		} //end for loop
+	}
+	else if (timePeriod == "hours"){
+	//scan through text element id's
+		var j=0;
+		for (j=0;j<=3;j++){
+		current_element_id = labelArray[j];
+		textnode = document.getElementById(current_element_id);
+		printLine =  hourOffset(label_interval, j);
+		textnode.textContent = printLine + "\n"
+		} //end for loop
+	}
+
+
+
+
+	//array of range element id's
+	var rangeArray=new Array(5);
+	rangeArray[0]="range1";
+	rangeArray[1]="range2";
+	rangeArray[2]="range3";
+	rangeArray[3]="range4";
+	rangeArray[4]="range5";
+
+	//scan through text element id's
+		var j=0;
+		for (j=0;j<=4;j++){
+		current_element_id = rangeArray[j];
+		textnode = document.getElementById(current_element_id);
+		printLine =  valueRange("temperature", 60, 20, j );
+		textnode.textContent = printLine + "\n"
+		} //end for loop
+
+
+} //end init function
+
+]]>
+</script>
+
+<g id="background">
+	<rect id="webpage_x5F_color_x5F_bg" fill="#D4D4D4" width="256" height="146"/>
+	<g id="frame_1_">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="484.085" y1="646.75" x2="484.085" y2="773.25" gradientTransform="matrix(1 0 0 1 -356 -645)">
+			<stop  offset="0" style="stop-color:#C1C1C0"/>
+			<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+			<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+			<stop  offset="0.8039" style="stop-color:#888888"/>
+			<stop  offset="1" style="stop-color:#808080"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" stroke="#808080" stroke-width="3" stroke-miterlimit="10" d="M253.404,128.25H2.762V7.812
+			c0-3.334,2.708-6.062,6.02-6.062h238.604c3.311,0,6.021,2.728,6.021,6.062L253.404,128.25L253.404,128.25z"/>
+	</g>
+	<g id="name_x5F_plack_1_">
+		<path fill="#808080" d="M1.167,125.25H255v13.875c0,3.3-2.648,6-5.887,6H7.054c-3.237,0-5.887-2.7-5.887-6V125.25L1.167,125.25z"
+			/>
+			
+			
+		<text transform="matrix(1 0 0 1 124 141.25)" font-family="Verdana" font-size="10" text-anchor="middle">24 Hour Jacuzzi Pump</text>
+
+	</g>
+</g>
+<g id="grid">
+	<g id="Markings">
+		<g id="horizontal_x5F_line_3_">
+			
+				<line fill="none" stroke="#353535" stroke-miterlimit="10" stroke-dasharray="2.9839,2.9839" x1="4.264" y1="88.417" x2="226.877" y2="88.417"/>
+		</g>
+		<g id="horizontal_x5F_line_2_">
+			
+				<line fill="none" stroke="#353535" stroke-miterlimit="10" stroke-dasharray="2.9839,2.9839" x1="4.264" y1="60.001" x2="226.877" y2="60.001"/>
+		</g>
+		<g id="horizontal_x5F_line_1_">
+			
+				<line fill="none" stroke="#353535" stroke-miterlimit="10" stroke-dasharray="2.9839,2.9839" x1="4.264" y1="31.584" x2="226.877" y2="31.584"/>
+		</g>
+		<g id="center_x5F_line_6_">
+			
+				<line fill="none" stroke="#353535" stroke-miterlimit="10" stroke-dasharray="3.0513,3.0513" x1="78.778" y1="3.217" x2="78.778" y2="116.646"/>
+		</g>
+		<g id="main_x5F_center_x5F_line">
+			
+				<line fill="none" stroke="#353535" stroke-linejoin="bevel" stroke-dasharray="3.0513,3.0513" x1="152.89" y1="3.878" x2="152.89" y2="117.308"/>
+		</g>
+	</g>
+	<path id="graph_x5F_frame" fill="none" stroke="#353535" stroke-miterlimit="10" d="M226.667,3v113.333l-222,0.625
+		c0,0-0.229-108.208-0.229-109.062c0.083-1.5,0.729-2.667,1.688-3.521C7.583,3.25,9.25,3,10.375,3S226.667,3,226.667,3z"/>
+</g>
+<g id="vertical_text">
+
+	<text id="range5" transform="matrix(1 0 0 1 228.333 10.416)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	
+	<text id="range4" transform="matrix(1 0 0 1 228.333 34.166)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+
+	<text id="range3" transform="matrix(1 0 0 1 228.333 62.749)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	
+	<text id="range2" transform="matrix(1 0 0 1 229 90.5)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+
+	<text id="range1" transform="matrix(1 0 0 1 228.499 116.582)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	
+	
+</g>
+<g id="horizontal_text">
+	<text id="label1" text-anchor="end" transform="matrix(1 0 0 1 227 125.084)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	<text id="label2" transform="matrix(1 0 0 1 139.334 125.0859)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	<text id="label3" transform="matrix(1 0 0 1 64.6665 125.084)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+	<text id="label4" transform="matrix(1 0 0 1 4 125.084)" fill="#353535" font-family="'Verdana'" font-size="8"></text>
+</g>
+
+<g id="graph">
+
+	<polyline fill="none" stroke="#0055FF" stroke-width="2"  stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="4.2299651567944,90.8 
+6.5400696864112,92.76 8.8501742160279,94.44 11.160278745645,95.84 13.470383275261,96.68 15.780487804878,97.24 
+18.090592334495,96.96 20.400696864112,98.36 22.710801393728,99.48 25.020905923345,100.04 27.331010452962,100.6 
+29.641114982578,100.88 31.951219512195,100.32 34.261324041812,100.6 36.571428571429,101.16 38.881533101045,101.72 
+41.191637630662,102.28 43.501742160279,102.28 45.811846689895,102.56 48.121951219512,103.12 50.432055749129,103.12 
+52.742160278746,103.4 55.052264808362,103.4 57.362369337979,103.68 59.672473867596,103.68 61.982578397213,103.68 
+64.292682926829,103.96 66.602787456446,103.96 68.912891986063,104.24 71.222996515679,104.24 73.533101045296,104.52 
+75.843205574913,104.52 78.15331010453,104.52 80.463414634146,104.24 82.773519163763,69.24 85.08362369338,49.92 
+87.393728222997,44.32 89.703832752613,44.88 92.01393728223,46.84 94.324041811847,55.52 96.634146341463,65.32 
+98.94425087108,71.76 101.2543554007,76.52 103.56445993031,81.56 105.87456445993,84.64 108.18466898955,87.44 
+110.49477351916,91.64 112.80487804878,93.88 115.1149825784,95.56 117.42508710801,96.96 119.73519163763,97.8 
+122.04529616725,98.92 124.35540069686,99.76 126.66550522648,100.04 128.9756097561,100.32 131.28571428571,100.88 
+133.59581881533,101.16 135.90592334495,101.16 138.21602787456,101.44 140.52613240418,101.72 142.8362369338,102 
+145.14634146341,102 147.45644599303,102.28 149.76655052265,102.28 152.07665505226,102.28 154.38675958188,102.28 
+156.6968641115,102.28 159.00696864111,102.28 161.31707317073,102.28 163.62717770035,102.28 165.93728222997,102.28 
+168.24738675958,102.28 170.5574912892,102 172.86759581882,102 175.17770034843,102 177.48780487805,101.72 
+179.79790940767,101.72 182.10801393728,101.44 184.4181184669,101.44 186.72822299652,101.72 189.03832752613,101.44 
+191.34843205575,101.72 193.65853658537,67.84 195.96864111498,50.76 198.2787456446,44.6 200.58885017422,43.48 
+202.89895470383,47.4 205.20905923345,56.92 207.51916376307,65.6 209.82926829268,72.88 212.1393728223,77.36 
+214.44947735192,81.56 216.75958188153,85.76 219.06968641115,88 221.37979094077,91.08 223.68989547038,92.48 
+"/>
+ </g>
+<g id="links">
+	
+		<a xlink:href="graph.php?duration=1hours&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_1_Hour">
+			<g id="_x31_hour_box">
+				
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1486.876" y1="-2200.0317" x2="1486.876" y2="-2183.6978" gradientTransform="matrix(1 0 0 -1 -1246 -2056)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_2_)" d="M232.042,130.698c0-1.65,1.351-3,3-3h11.666c1.649,0,3,1.35,3,3v10.334c0,1.649-1.351,3-3,3
+					h-11.666c-1.649,0-3-1.351-3-3V130.698z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 234.4941 138.6035)" font-family="'Verdana'" font-size="9">1H</text>
+		</g>
+	</a>
+	
+		<a xlink:href="graph.php?duration=24hours&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_24hours">
+			<g id="_24hours_box">
+				
+					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1288.5215" y1="2079.1152" x2="1288.5215" y2="2062.7812" gradientTransform="matrix(1 0 0 1 -1068 -1935)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_3_)" d="M210.084,130.781c0-1.65,1.35-3,3-3h14.875c1.65,0,3,1.35,3,3v10.334c0,1.65-1.35,3-3,3h-14.875
+					c-1.65,0-3-1.35-3-3V130.781z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 211.3555 138.6035)" font-family="'Verdana'" font-size="9">24H</text>
+		</g>
+	</a>
+	
+		<a xlink:href="graph.php?duration=2days&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_48hours_1_">
+			<g id="_48hours_box">
+				
+					<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="1266.5215" y1="2079.1152" x2="1266.5215" y2="2062.7812" gradientTransform="matrix(1 0 0 1 -1068 -1935)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_4_)" d="M188.084,130.781c0-1.65,1.35-3,3-3h14.875c1.65,0,3,1.35,3,3v10.334c0,1.65-1.35,3-3,3h-14.875
+					c-1.65,0-3-1.35-3-3V130.781z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 189.3555 138.6035)" font-family="'Verdana'" font-size="9">48H</text>
+		</g>
+	</a>
+	
+		<a xlink:href="graph.php?duration=7days&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_7days">
+			<g id="_7days_box">
+				
+					<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="1298" y1="-2199.7817" x2="1298" y2="-2183.4478" gradientTransform="matrix(1 0 0 -1 -1246 -2056)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_5_)" d="M43.167,130.448c0-1.65,1.35-3,3-3h11.666c1.65,0,3,1.35,3,3v10.334c0,1.649-1.35,3-3,3H46.167
+					c-1.65,0-3-1.351-3-3V130.448z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 44.3467 138.6035)" font-family="'Verdana'" font-size="9">1W</text>
+		</g>
+	</a>
+	
+		<a xlink:href="graph.php?duration=31days&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_31days">
+			<g id="_31days_box">
+				
+					<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="1278.7217" y1="-2200.1147" x2="1278.7217" y2="-2183.7808" gradientTransform="matrix(1 0 0 -1 -1246 -2056)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_6_)" d="M23.888,130.781c0-1.65,1.351-3,3-3h11.666c1.65,0,3,1.35,3,3v10.334c0,1.65-1.35,3-3,3H26.888
+					c-1.649,0-3-1.35-3-3V130.781z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 26.0674 138.6035)" font-family="'Verdana'" font-size="9">1M</text>
+		</g>
+	</a>
+	
+		<a xlink:href="graph.php?duration=90days&amp;type=temperature&amp;gauge=Jacuzzi Pump&amp;datastream=3&amp;low=20&amp;high=60&amp;play_sound=1" >
+		<g id="_90days">
+			<g id="_90days_box">
+				
+					<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="1259.4424" y1="-2200.1147" x2="1259.4424" y2="-2183.7808" gradientTransform="matrix(1 0 0 -1 -1246 -2056)">
+					<stop  offset="0" style="stop-color:#E0E0E0"/>
+					<stop  offset="0.2745" style="stop-color:#B9B9B9"/>
+					<stop  offset="0.5686" style="stop-color:#A9A8A8"/>
+					<stop  offset="1" style="stop-color:#F2F2F2"/>
+				</linearGradient>
+				<path fill="url(#SVGID_7_)" d="M4.609,130.781c0-1.65,1.35-3,3-3h11.666c1.65,0,3,1.35,3,3v10.334c0,1.65-1.35,3-3,3H7.609
+					c-1.65,0-3-1.35-3-3V130.781z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 6.7891 138.6035)" font-family="'Verdana'" font-size="9">3M</text>
+		</g>
+	</a>
+</g>
+ 
+ 
+</svg>
