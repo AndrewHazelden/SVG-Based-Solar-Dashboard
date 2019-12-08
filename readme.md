@@ -8,9 +8,9 @@ web: [www.andrewhazelden.com](http://www.andrewhazelden.com "www.andrewhazelden.
 
 ## Screenshots ##
 
-![Solar Dashboard](http://www.andrewhazelden.com/blog/wp-content/uploads/2011/07/solar_dashboard.png)
+![Solar Dashboard](Solar_Dashboard_Screenshot.png)
 
-![This is a view of the Solar Dashboard on an iPod Touch.](http://www.andrewhazelden.com/blog/wp-content/uploads/2011/07/Dashboard_on_iPod.png)
+![This is a view of the Solar Dashboard on an iPod Touch.](Solar_Dashboard_on_iPod_Touch.png)
 
 ## About the Scripts ##
 
@@ -24,10 +24,10 @@ This script was made to support the Villa Azul Solar PV and Hot water systems. Y
 [http://www.true.mistral.co.uk/dash/](http://www.true.mistral.co.uk/dash/)
 
 For more information on this project check out my blog post:  
-[Monitoring A Solar Hot Water System Over the Internet](http://www.andrewhazelden.com/blog/2011/07/monitoring-a-solar-hot-water-system-over-the-internet/).
+[Monitoring A Solar Hot Water System Over the Internet](https://web.archive.org/web/20160421231651/http://www.andrewhazelden.com/blog/2011/07/monitoring-a-solar-hot-water-system-over-the-internet/).
 
 I wrote a blog post about the process of using a linksys router as a network serial port:  
-[How to use the serial ports on a Linksys WRT54GS with DD-WRT v24](http://www.andrewhazelden.com/blog/2010/01/how-to-use-the-serial-ports-on-a-linksys-wrt54gs-with-dd-wrt-v24/).
+[How to use the serial ports on a Linksys WRT54GS with DD-WRT v24](https://web.archive.org/web/20160419085155/http://www.andrewhazelden.com/blog/2010/01/how-to-use-the-serial-ports-on-a-linksys-wrt54gs-with-dd-wrt-v24/).
 
 Regards,  
 Andrew Hazelden
